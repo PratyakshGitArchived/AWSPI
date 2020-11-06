@@ -1,0 +1,37 @@
+
+{% extends "_base.htm" %}
+{% block title %}
+    Page 2
+{% endblock %}
+{% block pageblock %}
+<div class="form-popup" id="myForm">
+  <form action = "https://eco-shift-268116.appspot.com/get_user_data" method = "POST">
+      
+         <legend>Please Select Following</legend>
+         <p>
+            <label><b>AWS Service</b></label>
+            <select id = "myList" name = "service">
+              <option value = "Lambda">Lambda</option>
+              <option value = "EC2">EC2</option>
+            </select>
+         </p>
+         <br>
+         <label for="shots"><b>Total shots</b></label>
+         <input type="text" id ="ssd" placeholder="Multiple of 1000 only" name="shots" required>
+         <br>
+         <br>
+         <label for="resources"><b>Total resources</b></label>
+         <input type="text" id ="ssd" placeholder="" name="resources" required>
+         <br>
+         <br>
+         <label for="reporting_rate"><b>Total Reporting Rate</b></label>
+         <input type="text" id ="ssd" placeholder="" name="reporting_rate" required>
+         <br>
+         <input type="submit">
+      
+
+   </form>
+</div>
+
+
+{% endblock %}
